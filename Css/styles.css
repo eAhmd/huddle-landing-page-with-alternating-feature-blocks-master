@@ -1,0 +1,265 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    margin: 0;
+    
+}
+ul {
+    list-style: none;
+}
+.container {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+@media (max-width:767px) {
+    .container {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+/*Start Header*/
+.header {
+    background-image: url("../images/bg-hero-desktop.svg");
+    background-size: cover;
+    margin-bottom: 100px;
+    background-color: hsl(193, 100%, 96%);
+}
+@media (max-width:767px) {
+    .header {
+        background-color: url("../images/bg-hero-mobile.svg");
+        background-size: cover;
+    }
+}
+nav {
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+
+nav .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .container .logo img {
+    width: 120px;
+}
+@media (max-width:767px) {
+    nav .container .logo img {
+        width: 100px;
+    }
+}
+nav .container a {
+    text-decoration: none;
+    padding: 10px 40px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 1px 1px hsl(193, 100%, 96%);
+    color: hsl(192, 100%, 9%);
+}
+nav .container a:hover {
+    color: hsl(192, 10%, 50%);
+}
+@media (max-width:767px) {
+    nav .container a {
+        padding: 5px 20px;
+    }
+}
+.section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.section .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+@media (max-width:767px) {
+    .section .container {
+        flex-direction: column;
+    }
+}
+.section .container .text{
+    width: 400px;
+    margin-top: 50px;
+}
+@media (max-width:767px) {
+    .section .container .text {
+        margin-top: 0px;
+        width: -moz-fit-content;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+}
+.section .container .text h2 {
+    font-size: 30px;
+}
+.section .container .text p {
+    margin-bottom: 40px;
+    color: hsl(208, 11%, 55%);
+}
+.section .container .text a {
+    text-decoration: none;
+    padding: 10px 80px;
+    background-color: hsl(322, 100%, 66%);
+    border-radius: 150px;
+    color: hsl(193, 100%, 96%);
+}
+@media (max-width:767px) {
+    .section .container .text a {
+        padding: 10px 40px;
+    }
+}
+.section .container .image img {
+    width: 620px;
+    max-width: 100%;
+}
+@media (max-width:767px) {
+    .section .container .image {
+        text-align: center;
+
+    }
+}
+
+/*End Header*/
+/*Start Flowing*/
+.flowing {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.flowing .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 70px 80px;
+    border: 1px solid hsl(193, 100%, 96%);
+    border-radius: 15px;
+    box-shadow: 2px 2px hsl(193, 100%, 96%);
+    
+}
+@media (max-width:767px) {
+    .flowing .container {
+        flex-direction:column-reverse;
+        padding: 30px 10px;
+    }
+    .flow .container {
+        flex-direction: column;
+    }
+}
+.flowing .container .image img {
+    width: 270px;
+    max-width: 100%;
+}
+@media (max-width:767px) {
+    .flowing .container .image {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+.flowing .container .text {
+    width: 500px;
+}
+@media (max-width:767px) {
+    .flowing .container .text {
+        width: -moz-fit-content;
+        text-align: center;
+    }
+}
+.flowing .container .text p {
+    color: hsl(208, 11%, 55%);
+}
+/*End Flowing*/
+/*Start Fopter*/
+footer {
+    background-color: hsl(192, 100%, 9%);
+    color: hsl(208, 11%, 55%);
+    padding: 100px 0 ;
+    position: relative;
+    margin-top: 300px;
+}
+footer .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    
+}
+
+li {
+    margin-bottom: 30px;
+}
+footer .container .contact ul li img {
+    margin-right: 30px;
+}
+footer .container .about a {
+    text-decoration: none;
+    color: hsl(208, 11%, 55%);
+}
+footer .container .about a:hover {
+    text-decoration: underline;
+    
+}
+footer .container .icon i {
+    margin-left: 10px;
+    color: white;
+    padding: 4px;
+    border: 1px solid hsl(208, 11%, 55%);
+    border-radius: 50%;
+}
+@media (max-width:767px) {
+    footer .container .icon  {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
+footer .container .icon i:hover {
+    color: hsl(208, 11%, 55%);
+}
+.comm {
+    position: absolute;
+    padding: 20px 40px;
+    background-color: hsl(193, 100%, 96%);
+    left: 50%;
+    transform: translateX(-50%);
+    top: -95px;
+    height: 150px;
+    border-radius: 10px;
+    text-align: center;
+}
+@media (max-width:767px) {
+    .comm {
+        width: 330px;
+        padding: 20px 6px;
+        height: 170px;
+        
+    }
+}
+.comm h3 {
+    color: hsl(192, 100%, 9%);
+    margin-bottom: 25px;
+}
+.comm a {
+    
+    text-decoration: none;
+    padding: 10px 80px;
+    background-color: hsl(322, 100%, 66%);
+    border-radius: 150px;
+    color: hsl(193, 100%, 96%);
+
+}
+@media (max-width:767px) {
+    .comm a {
+        padding: 10px 20px;
+    }
+}
+footer p {
+    text-align: end;
+    margin-right: 40px;
+}
+@media (max-width:767px) {
+    footer p {
+        text-align: center;
+        font-size: 13px;
+        margin: 0;
+    }
+}
+/*End Footer*/
